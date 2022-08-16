@@ -206,12 +206,12 @@ def user_stats(df,city):
         print("{}% women\n".format(round(int(gen['Female'])/(int(gen['Male'])+int(gen['Female']))*100,2)))
         # display earliest, most recent, and most common year of birth
         print("For this data:")
-        eby = df['Birth Year'].max()
-        print("The most recent year of birth of a user was:", str(eby)[0:4])
-        nby = df['Birth Year'].min()
-        print("The earliest year of birth of a user was:",str(nby)[0:4])
-        cby = df['Birth Year'].mode()
-        print("The most common year of birth of a user was:",str(cby[0])[0:4])
+        recentby = df['Birth Year'].max()
+        print("The most recent year of birth of a user was:", str(recentby)[0:4])
+        earlyby = df['Birth Year'].min()
+        print("The earliest year of birth of a user was:",str(earlyby)[0:4])
+        commonby = df['Birth Year'].mode()
+        print("The most common year of birth of a user was:",str(commonby[0])[0:4])
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
