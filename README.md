@@ -13,4 +13,4 @@ Project follows the steps to using remote repositories through git and github.
 Hidden files in repository are chicago.csv new_york_city.csv and washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Credit for this project goes to the Udacity team and Zack
